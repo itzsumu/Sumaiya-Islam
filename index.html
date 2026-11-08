@@ -1,215 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rouja | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portfolio of Sumaiya Islam Rouja, Frontend Developer.">
+    <meta name="author" content="Sumaiya Islam Rouja">
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Sumaiya Islam Rouja | Portfolio</title>
 
-<!-- AOS Animation -->
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 </head>
 
 <body>
 
-<!-- HERO -->
-<header class="hero">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Sumaiya<span>.</span></a>
 
-  <div class="hero-left" data-aos="fade-right">
-    <h1>Sumaiya Islam Rouja</h1>
-    <h3>CSE Student & Aspiring Developer</h3>
-    <p>
-      I build clean, simple and user-friendly web applications and explore machine learning projects.
-    </p>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact" class="nav-contact">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-    <div class="buttons">
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="#contact" class="btn-outline">Contact</a>
-    </div>
-  </div>
 
-  <div class="hero-right" data-aos="fade-left">
-    <img src="profile.jpg" alt="profile">
-  </div>
+    <!-- HERO SECTION -->
+    <header class="hero" id="home">
 
-</header>
+        <div class="hero-left" data-aos="fade-right">
 
-<!-- ABOUT -->
-<section class="section" data-aos="fade-up">
-  <h2>About Me</h2>
-  <p>
-    I am a Computer Science student passionate about web development and machine learning.
-    My goal is to become a software engineer and gain real-world experience through internships.
-  </p>
-</section>
+            <span class="hero-tag">WELCOME TO MY PORTFOLIO</span>
 
-<!-- SKILLS -->
-<section class="section" data-aos="fade-up">
-  <h2>Skills</h2>
+            <h1>
+                Hi, I'm <span>Sumaiya Islam Rouja</span>
+            </h1>
 
-  <div class="skills">
-    <span>C</span>
-    <span>C++</span>
-    <span>Python</span>
-    <span>JavaScript</span>
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>Bootstrap</span>
-    <span>Git</span>
-    <span>GitHub</span>
-  </div>
-</section>
+            <h3>Frontend Developer</h3>
 
-<!-- PROJECTS -->
-<section id="projects" class="section" data-aos="fade-up">
-  <h2>Projects</h2>
+            <p>
+                I enjoy creating clean, responsive, and user-friendly websites.
+                I have hands-on experience with HTML, CSS, and JavaScript through
+                personal and academic projects. I am always eager to learn new
+                technologies and improve my development skills.
+            </p>
 
-  <div class="projects">
+            <div class="buttons">
+                <a href="#projects" class="btn">Explore My Projects</a>
+                <a href="#contact" class="btn-outline">Contact Me</a>
+            </div>
 
-    <!-- Project 1 -->
-    <a href="https://github.com/itzsumu/Unix-Learning-Platform" target="_blank" class="card-link">
+            <div class="hero-socials">
+                <a href="https://github.com/itzsumu" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
 
-  <div class="card">
-    <h3>UNIX Learning Platform</h3>
+                <a href="https://www.linkedin.com/in/sumaiya-islam-rouja-9b50132ab/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            </div>
 
-    <p>
-      An interactive web-based learning platform designed to help users learn UNIX commands in a structured and beginner-friendly way.
-    </p>
+        </div>
 
-    <div class="tags">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-    </div>
+        <div class="hero-right" data-aos="fade-left">
+            <div class="image-frame">
+                <img src="profile.jpg" alt="Sumaiya Islam Rouja">
+            </div>
+        </div>
 
-    <button class="open-btn">View on GitHub →</button>
-  </div>
+    </header>
 
-</a>
-    <!-- Project 2 -->
-  <a href="https://github.com/itzsumu/Mediworld-Pvt-Ltd" target="_blank" class="card-link">
 
-  <div class="card">
-    <h3>Mediworld Pvt Ltd Website</h3>
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about" data-aos="fade-up">
 
-    <p>
-      A professional medical company website designed to represent a private healthcare organization with clean UI and structured service presentation.
-    </p>
+        <div class="section-heading">
+            <span class="section-label">GET TO KNOW ME</span>
+            <h2>About Me</h2>
+        </div>
 
-    <div class="tags">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-    </div>
+        <div class="about-content">
+            <p>
+                I am a Computer Science and Engineering student at the
+                University of Liberal Arts Bangladesh (ULAB), with an
+                interest in frontend development and machine learning.
+            </p>
 
-    <button class="open-btn">View on GitHub →</button>
-  </div>
+            <p>
+                I enjoy turning ideas into simple and user-friendly web
+                experiences. Through my academic and personal projects,
+                I have gained practical experience in building websites
+                using HTML, CSS, JavaScript, and other web technologies.
+            </p>
 
-</a>
+            <p>
+                My goal is to grow as a software developer, gain real-world
+                experience, and continue learning through challenging projects
+                and professional opportunities.
+            </p>
+        </div>
 
-    <!-- Project 3 -->
-   <a href="https://github.com/itzsumu/Tree_Talk" target="_blank" class="card-link">
+    </section>
 
-  <div class="card">
-    <h3>Tree Talk (Frontend Design)</h3>
 
-    <p>
-      A clean and responsive frontend UI design project focused on environmental awareness and tree plantation awareness. This project is frontend-only with no backend integration.
-    </p>
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills" data-aos="fade-up">
 
-    <div class="tags">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>Frontend Design</span>
-    </div>
+        <div class="section-heading">
+            <span class="section-label">WHAT I WORK WITH</span>
+            <h2>My Skills</h2>
+            <p>Technologies and tools I have worked with.</p>
+        </div>
 
-    <button class="open-btn">View on GitHub →</button>
-  </div>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>C</span>
+            <span>GitHub</span>
+            <span>VS Code</span>
+            <span>Microsoft Word</span>
+            <span>Microsoft Excel</span>
+            <span>Microsoft PowerPoint</span>
+        </div>
 
-</a>
+    </section>
 
-  </div>
-</section>
-<!-- certificates -->
-<section class="section" data-aos="fade-up">
-  <h2>Certificates</h2>
 
-  <div class="certificates">
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects" data-aos="fade-up">
 
-    <div class="cert-card">
-      <img src="cert1.jpg" alt="">
-      <h3>Web Development</h3>
-      <p>Coursera / Udemy</p>
-    </div>
+        <div class="section-heading">
+            <span class="section-label">MY RECENT WORK</span>
+            <h2>Featured Projects</h2>
+            <p>Some of the projects I have worked on.</p>
+        </div>
 
-    <div class="cert-card">
-      <img src="cert2.jpg" alt="">
-      <h3>Python Basics</h3>
-      <p>freeCodeCamp</p>
-    </div>
+        <div class="projects">
 
-    <div class="cert-card">
-      <img src="cert3.jpg" alt="">
-      <h3>Machine Learning Intro</h3>
-      <p>Coursera</p>
-    </div>
+            <!-- PROJECT 1 -->
+            <article class="project-card">
 
-  </div>
-</section>
-<!-- Resume -->
-<section class="section" data-aos="fade-up">
-  <h2>Resume</h2>
+                <div class="project-number">01</div>
 
-  <p style="color:#64748B;">
-    Download my resume to learn more about my education, skills and projects.
-  </p>
+                <div class="project-content">
+                    <h3>UNIX Learning Platform</h3>
 
-  <a href="resume.pdf" class="btn" download>
-    Download Resume
-  </a>
-</section>
+                    <p>
+                        An interactive web-based learning platform designed
+                        to help beginners learn UNIX commands in a structured
+                        and beginner-friendly way.
+                    </p>
 
-<!-- CONTACT -->
-<footer id="contact" data-aos="fade-up">
-  <h2>Contact</h2>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
 
-  <p>
-    📧 Email: 
+                <a href="https://itzsumu.github.io/Unix-Learning-Platform"
+                   target="_blank" rel="noopener noreferrer"
+                   class="project-link">
+                    Live Demo <span>↗</span>
+                </a>
+
+                <a href="https://github.com/itzsumu/Unix-Learning-Platform"
+                   target="_blank" rel="noopener noreferrer"
+                   class="project-link">
+                    View on GitHub <span>↗</span>
+                </a>
+
+            </article>
+
+
+            <!-- PROJECT 2 -->
+            <article class="project-card">
+
+                <div class="project-number">02</div>
+
+                <div class="project-content">
+                    <h3>Mediworld Pvt Ltd Website</h3>
+
+                    <p>
+                        A company website for a medical equipment business,
+                        featuring product information, company details,
+                        contact information, and an inquiry section.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+                <a href="https://itzsumu.github.io/Mediworld-Pvt-Ltd/"
+                   target="_blank" rel="noopener noreferrer"
+                   class="project-link">
+                    Live Demo <span>↗</span>
+                </a>
+
+                <a href="https://github.com/itzsumu/Mediworld-Pvt-Ltd"
+                   target="_blank" rel="noopener noreferrer"
+                   class="project-link">
+                    View on GitHub <span>↗</span>
+                </a>
+
+            </article>
+
+
+            <!-- PROJECT 3 -->
+            <article class="project-card">
+
+                <div class="project-number">03</div>
+
+                <div class="project-content">
+                    <h3>Tree Talk</h3>
+
+                    <p>
+                        A frontend-only website project focused on
+                        environmental awareness and tree plantation.
+                        It demonstrates responsive layout and interface design.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Frontend Design</span>
+                    </div>
+                </div>
+
+                <a href="https://itzsumu.github.io/Tree_Talk/"
+                   target="_blank" rel="noopener noreferrer"
+                   class="project-link">
+                    Live Demo <span>↗</span>
+                </a>
+
+                <a href="https://github.com/itzsumu/Tree_Talk"
+                   target="_blank" rel="noopener noreferrer"
+                   class="project-link">
+                    View on GitHub <span>↗</span>
+                </a>
+
+            </article>
+
+
+            <!-- PROJECT 4 -->
+            <article class="project-card">
+
+                <div class="project-number">04</div>
+
+                <div class="project-content">
+                    <h3>Tic-Tac-Toe Game</h3>
+
+                    <p>
+                        A small interactive Tic-Tac-Toe game featuring
+                        Human vs Human and Human vs AI modes, with a
+                        smart AI opponent.A classic strategy game reimagined with a clean, modern interface. Players take turns marking X and O on a grid, aiming to align three in a row.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        
+                    </div>
+                </div>
+
+                <a href="https://itzsumu.github.io/Tic-Tac-Toe/"
+                   target="_blank" rel="noopener noreferrer"
+                   class="project-link">
+                    Live Demo <span>↗</span>
+                </a>
+
+                <a href="https://github.com/itzsumu/Tic-Tac-Toe"
+                   target="_blank" rel="noopener noreferrer"
+                   class="project-link">
+                    View on GitHub <span>↗</span>
+                </a>
+
+            </article>
+
+
+            <!-- PROJECT 5 -->
+            <article class="project-card">
+
+                <div class="project-number">05</div>
+
+                <div class="project-content">
+                    <h3>Memory Card Game</h3>
+
+                    <p>
+                        An interactive memory game with multiple levels,
+                        different themes, difficulty settings, and a
+                        sound control option.
+                    </p>
+
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        
+                    </div>
+                </div>
+
+                <a href="https://itzsumu.github.io/Memory-Card-Game/"
+                   target="_blank" rel="noopener noreferrer"
+                   class="project-link">
+                    Live Demo <span>↗</span>
+                </a>
+
+                <a href="https://github.com/itzsumu/Memory-Card-Game"
+                   target="_blank" rel="noopener noreferrer"
+                   class="project-link">
+                    View on GitHub <span>↗</span>
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESUME SECTION -->
+    <section class="section resume-section" id="resume" data-aos="fade-up">
+
+        <div class="resume-content">
+
+            <span class="section-label">MY BACKGROUND</span>
+
+            <h2>Want to Know More?</h2>
+
+            <p>
+                Download my resume to learn more about my education,
+                technical skills, and project experience.
+            </p>
+
+            <a href="resume.pdf" class="btn" download="Sumaiya_Islam_Rouja_Resume.pdf">
+                Download My Resume ↓
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <footer id="contact">
+
+        <div class="footer-content">
+
+            <span class="section-label">LET'S CONNECT</span>
+
+            <h2>Get In Touch</h2>
+
+            <p>
+                I am open to learning opportunities, collaborations,
+                and frontend development opportunities.
+            </p>
+
+          <div class="contact-links">
+
     <a href="mailto:roujasumaiya947@gmail.com">
-      roujasumaiya947@gmail.com
+        Email ↗
     </a>
-  </p>
 
-  <p>
-    💻 GitHub: 
-    <a href="https://github.com/itzsumu" target="_blank">
-      github.com/itzsumu
+    <a href="https://github.com/itzsumu"
+       target="_blank" rel="noopener noreferrer">
+        GitHub ↗
     </a>
-  </p>
 
-  <p>
-    🔗 LinkedIn: 
-    <a href="https://www.linkedin.com/in/sumaiya-islam-rouja-9b50132ab/" target="_blank">
-      Sumaiya Islam Rouja
+    <a href="https://www.linkedin.com/in/sumaiya-islam-rouja-9b50132ab/"
+       target="_blank" rel="noopener noreferrer">
+        LinkedIn ↗
     </a>
-  </p>
 
-  <p class="copy">© 2026 Rouja</p>
-</footer>
+</div>
+            <p class="copy">
+                © 2026 Sumaiya Islam Rouja. All rights reserved.
+            </p>
 
-<!-- AOS -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 800,
-    once: true
-  });
-</script>
+        </div>
+
+    </footer>
+
+
+    <!-- AOS SCRIPT -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 80
+        });
+    </script>
 
 </body>
 </html>
