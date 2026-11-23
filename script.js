@@ -230,3 +230,64 @@ createCarousel({
         return 3;
     }
 });
+
+/* NAVBAR LOGO ON SCROLL */
+
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+
+/* =========================
+   MOBILE HAMBURGER MENU
+========================= */
+
+const navbarElement = document.querySelector(".navbar");
+const hamburgerButton = document.getElementById("hamburger");
+const navMenuElement = document.getElementById("navMenu");
+
+if (navbarElement && hamburgerButton && navMenuElement) {
+
+    // Open and close menu
+    hamburgerButton.addEventListener("click", () => {
+        const isOpen = navbarElement.classList.toggle("menu-open");
+
+        hamburgerButton.setAttribute("aria-expanded", isOpen);
+        hamburgerButton.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation menu" : "Open navigation menu"
+        );
+    });
+
+    // Close menu after clicking a navigation link
+    navMenuElement.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            navbarElement.classList.remove("menu-open");
+            hamburgerButton.setAttribute("aria-expanded", "false");
+            hamburgerButton.setAttribute("aria-label", "Open navigation menu");
+        });
+    });
+
+    // Close menu when pressing Escape
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape") {
+            navbarElement.classList.remove("menu-open");
+            hamburgerButton.setAttribute("aria-expanded", "false");
+            hamburgerButton.setAttribute("aria-label", "Open navigation menu");
+        }
+    });
+
+    // Close menu when switching back to desktop
+    window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            navbarElement.classList.remove("menu-open");
+            hamburgerButton.setAttribute("aria-expanded", "false");
+            hamburgerButton.setAttribute("aria-label", "Open navigation menu");
+        }
+    });
+}
